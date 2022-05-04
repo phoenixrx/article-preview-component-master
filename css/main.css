@@ -19,6 +19,7 @@ main {
   width: 700px;
   border-radius: 20px;
   display: flex;
+  box-shadow: hsla(214, 26%, 69%, 0.733) 0px 8px 14px;
 }
 .foto {
   width: 40%;
@@ -148,13 +149,16 @@ nav {
   opacity: 50%;
 }
 .attribution {
+  margin-top: 10px;
   font-size: 11px;
   text-align: center;
+  background-color: transparent;
 }
 .attribution a {
   font-size: 11px;
   color: hsl(214, 17%, 51%);
   text-decoration: none;
+  background-color: transparent;
 }
 @media (max-width: 800px) {
   body {
@@ -246,5 +250,8 @@ nav {
     cursor: pointer;
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+  .content {
+    box-shadow: hsla(214, 26%, 69%, 0.733) 0px 0px 0px;
   }
 }
