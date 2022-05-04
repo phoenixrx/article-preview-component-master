@@ -89,17 +89,16 @@ nav {
 .rss {
   background-color: hsl(217, 19%, 35%);
   position: relative;
-  top: -60px;
-  left: -100px;
+  opacity: 0;
   height: 50px;
   width: 200px;
+  left: -100px;
   justify-content: center;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 10px;
   box-shadow: hsl(214, 17%, 51%) 0px 8px 24px;
-  opacity: 0;
 }
 .rss::before {
   content: "";
@@ -143,6 +142,8 @@ nav {
 
 .share:hover .rss {
   opacity: 1;
+  transform: translate(-1px, -60px);
+  transition: 0.5s;
 }
 .rss p {
   margin-bottom: 10px;
@@ -172,6 +173,7 @@ nav {
     min-width: 370px;
     max-width: 370px;
     flex-direction: column;
+    overflow: hidden;
   }
   .foto {
     width: 90%;
@@ -215,7 +217,7 @@ nav {
     background-color: hsl(217, 19%, 35%);
     border-radius: 0px 0px 20px 20px;
     position: relative;
-    top: 0px;
+    top: 100px;
     left: -263px;
     height: 60px;
     width: 333px;
@@ -223,10 +225,16 @@ nav {
     align-items: center;
     padding-left: 0px;
     padding-right: 0px;
-
     box-shadow: hsl(214, 17%, 51%) 0px 0px 0px;
     opacity: 0;
   }
+  .share:hover .rss {
+    opacity: 1;
+
+    transform: translate(-1px, -100px);
+    transition: 0.5s;
+  }
+
   .rss::before {
     opacity: 0;
   }
